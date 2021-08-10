@@ -1,0 +1,15 @@
+<header> <button (click)="expanded = !expanded">Click me</button> Header</header>
+
+<div class="main-layout">
+  <aside class="sidebar" *ngIf="expanded" @slidein>
+    <ul>
+      <li>Menu 1</li>
+      <li>Menu 2</li>
+      <li>Menu 3</li>
+      <li>Menu 4</li>
+    </ul>
+  </aside>
+  <section style="font-size:75px;">
+    Hello There
+  </section>
+</div>
